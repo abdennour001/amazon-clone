@@ -1,6 +1,18 @@
 # Amazon Clone with React JS and Firebase
 
+This is an Amazon clone built using React JS in the front-end and Firebase in the back-end.
 
+### Technologies used
+
+-   ✅ REACT JS for front-end
+-   ✅ Context API (instead of redux)
+-   ✅ REACT Router 🧭
+-   ✅ Firebase (user authentication 🔑 + database ℹ️)
+-   ✅ Firebase Hosting to deploy 🚀
+
+### What are we going to do?
+
+-   [ ] ⌨️
 
 # How it works
 
