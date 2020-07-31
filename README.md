@@ -10,9 +10,19 @@ This is an Amazon clone built using React JS in the front-end and Firebase in th
 -   ✅ Firebase (user authentication 🔑 + database ℹ️)
 -   ✅ Firebase Hosting to deploy 🚀
 
-### What are we going to do?
+### 👇 What are we going to do? 👇
 
--   [ ] ⌨️
+-   [ ] ⌨️ Set up React app using the create-react-app command
+-   [ ] 🚀 Set up Firebase
+-   [ ] 🔄 Set up Rseact Router
+-   [ ] 🧭 Build the navbar (header)
+-   [ ] 🏗 Build the banner
+-   [ ] 🏗 Build the product component
+-   [ ] 🏗 Introduction to React Context API
+-   [ ] 🏗 Build checkout page
+-   [ ] 🏗 Build subtotal Component
+-   [ ] 🏗 Build Login page
+-   [ ] 🚀 Deploy application on Firebase
 
 # How it works
 
