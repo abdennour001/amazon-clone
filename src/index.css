@@ -1,3 +1,8 @@
+:root {
+    --amazon-primary-color: #131921;
+    --amazon-accent-color: #cd9042;
+}
+
 * {
     margin: 0;
 }
