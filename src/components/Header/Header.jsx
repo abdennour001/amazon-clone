@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./Header.module.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
+import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
 import { Link } from "react-router-dom";
 
 function Header() {
+    useEffect(() => {}, []);
+
+    const updateSelectWidth = e => {
+        e.target.style.width = e.target.options[e.target.selectedIndex].text.length + 5 + "ch";
+    };
+
     return (
         <nav className={styles["header"]}>
             {/** Logo section */}
@@ -18,6 +25,19 @@ function Header() {
 
             {/** Search bar section */}
             <div className={styles["header__l-search"]}>
+                <select
+                    className={
+                        styles["header__categorySelect"] +
+                        " js-header__categorySelect"
+                    }
+                    onChange={updateSelectWidth}
+                    name="category"
+                    id="category"
+                >
+                    <option value="all">All</option>
+                    <option value="beauty">Beauty</option>
+                    <option value="electronics">Electronics</option>
+                </select>
                 <input
                     className={styles["header__searchInput"]}
                     type="text"
@@ -59,8 +79,8 @@ function Header() {
                 {/** Basket section */}
                 <Link to="/checkout" className={styles["header__link"]}>
                     <div className={styles["header__l-basket"]}>
-                       <ShoppingBasket></ShoppingBasket> 
-                       <span className={styles["header__basketCount"]}>0</span>
+                        <ShoppingBasket></ShoppingBasket>
+                        <span className={styles["header__basketCount"]}>0</span>
                     </div>
                 </Link>
             </div>
