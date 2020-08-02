@@ -4,17 +4,19 @@ import styles from "./ProductCard.module.css";
 function ProductCard({ id, title, price, rating, image }) {
     return (
         <div className={styles["l-product_card"]}>
-            <p>{title}</p>
-            <p className={styles["l-product_card__price"]}>
-                <small>$</small>
-                <strong>{price}</strong>
-            </p>
-            <div className={styles["l-product_card__l-rating"]}>
-                {Array(rating)
-                    .fill()
-                    .map(_ => (
-                        <span>⭐️</span>
-                    ))}
+            <div className={styles["l-product__info"]}>
+                <p>{title}</p>
+                <p className={styles["l-product_card__price"]}>
+                    <small>$</small>
+                    <strong>{price}</strong>
+                </p>
+                <div className={styles["l-product_card__l-rating"]}>
+                    {Array(rating)
+                        .fill()
+                        .map(_ => (
+                            <span role="img" aria-label="star">⭐️</span>
+                        ))}
+                </div>
             </div>
             <img
                 className={styles["l-product_card__image"]}

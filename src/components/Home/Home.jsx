@@ -11,13 +11,24 @@ function Home() {
                 className={styles["home__image"]}
             />
 
-            <ProductCard
-                id="1"
-                title="Garmin Forerunner 235, GPS Running Watch, Black/Gray"
-                price={162.04}
-                rating={4}
-                image="https://images-na.ssl-images-amazon.com/images/I/81bnBG8g7VL._AC_SL1500_.jpg"
-            />
+            <div className={styles["home__row"]}>
+                <ProductCard
+                    key="2"
+                    id="1"
+                    title="Garmin Forerunner 235, GPS Running Watch, Black/Gray"
+                    price={162.04}
+                    rating={4}
+                    image="https://images-na.ssl-images-amazon.com/images/I/81bnBG8g7VL._AC_SL1500_.jpg"
+                />
+                <ProductCard
+                    key="2"
+                    id="2"
+                    title="AMD Ryzen 5 3600 6-Core, 12-Thread Unlocked Desktop Processor with Wraith Stealth Cooler"
+                    price={159.99}
+                    rating={4}
+                    image="https://images-na.ssl-images-amazon.com/images/I/71WPGXQLcLL._AC_SL1384_.jpg"
+                />
+            </div>
         </div>
     );
 }
