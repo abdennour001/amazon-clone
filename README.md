@@ -17,7 +17,7 @@ This is an Amazon clone built using React JS in the front-end and Firebase in th
 -   [x] 🔄 Set up Rseact Router
 -   [x] 🧭 Build the navbar (header)
 -   [x] 🏗 Build the banner
--   [ ] 🏗 Build the product component
+-   [x] 🏗 Build the product component
 -   [ ] 🏗 Introduction to React Context API
 -   [ ] 🏗 Build checkout page
 -   [ ] 🏗 Build subtotal Component
