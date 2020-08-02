@@ -5,7 +5,7 @@ function ProductCard({ id, title, price, rating, image }) {
     return (
         <div className={styles["l-product_card"]}>
             <div className={styles["l-product__info"]}>
-                <p>{title}</p>
+                <p className={styles["l-product_card__title"]}>{title}</p>
                 <p className={styles["l-product_card__price"]}>
                     <small>$</small>
                     <strong>{price}</strong>

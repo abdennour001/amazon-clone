@@ -37,6 +37,7 @@
 
 .header__l-nav {
     display: flex;
+    align-items: center;
 }
 
 .header__link {

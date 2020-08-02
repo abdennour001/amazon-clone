@@ -18,6 +18,14 @@
     flex-direction: column;
 }
 
+.l-product_card__title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
 .l-product_card__price {
     margin-top: 10px;
 }
