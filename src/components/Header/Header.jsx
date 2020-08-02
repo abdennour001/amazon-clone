@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import styles from "./Header.module.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
-import ArrowDropDown from "@material-ui/icons/ArrowDropDown";
 import { Link } from "react-router-dom";
 
 function Header() {
