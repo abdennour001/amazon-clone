@@ -14,7 +14,9 @@ function ProductCard({ id, title, price, rating, image }) {
                     {Array(rating)
                         .fill()
                         .map(_ => (
-                            <span role="img" aria-label="star">⭐️</span>
+                            <span role="img" aria-label="star">
+                                ⭐️
+                            </span>
                         ))}
                 </div>
             </div>
