@@ -7,7 +7,7 @@ import { useStateValue } from "../../utils/StateProvider";
 
 function Header() {
     useEffect(() => {}, []);
-    const [{ basket }, dispatch] = useStateValue();
+    const [{ basket }] = useStateValue();
 
     const updateSelectWidth = e => {
         e.target.style.width =

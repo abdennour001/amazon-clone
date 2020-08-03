@@ -1,5 +1,5 @@
 import React from "react";
-import ProductCard from "../ProductCard/ProductCard";
+import ProductCard from "../ProductCard";
 import styles from "./Home.module.css";
 
 function Home() {
@@ -13,7 +13,7 @@ function Home() {
 
             <div className={styles["home__row"]}>
                 <ProductCard
-                    key="2"
+                    key="1"
                     id="1"
                     title="Garmin Forerunner 235, GPS Running Watch, Black/Gray"
                     price={162.04}
@@ -48,8 +48,8 @@ function Home() {
                     image="https://images-na.ssl-images-amazon.com/images/I/718NVofDrCL._AC_SL1500_.jpg"
                 />
                 <ProductCard
-                    key="4"
-                    id="4"
+                    key="5"
+                    id="5"
                     title="Syncwire 3.5mm Nylon Braided Aux Cable (3.3ft/1m,Hi-Fi Sound), Audio Auxiliary Input Adapter Male to Male AUX Cord for Headphones, Car, Home Stereos, Speaker, iPhone, iPad, iPod, Echo & More - Black"
                     price={59.99}
                     rating={4}
@@ -58,8 +58,8 @@ function Home() {
             </div>
             <div className={styles["home__row"]}>
                 <ProductCard
-                    key="5"
-                    id="5"
+                    key="6"
+                    id="6"
                     title="andobil Car Phone Mount Ultimate Smartphone Car Air Vent Holder Easy Clamp Cradle Hands-Free Compatible with iPhone 11/11 Pro/11 Pro Max/8 Plus/8/X/XR/XS/SE Samsung Galaxy S20/S20+/S10/S9/S8/Note 10"
                     price={200.99}
                     rating={4}

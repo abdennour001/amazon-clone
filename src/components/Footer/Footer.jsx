@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Footer.module.css";
 
-function Footer() {
+export default function Footer() {
     return (
         <div className={styles["l-footer"]}>
             <ul className={styles["l-footer__menu"]}>
@@ -22,5 +22,3 @@ function Footer() {
         </div>
     );
 }
-
-export default Footer;

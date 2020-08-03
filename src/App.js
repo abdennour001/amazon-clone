@@ -1,9 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header/Header";
-import Home from "./components/Home/Home";
-import Footer from "./components/Footer/Footer";
+import Header from "./components/Header";
+import Home from "./components/Home";
+import Footer from "./components/Footer";
+import Checkout from "./components/Checkout";
 
 function App() {
     return (
@@ -14,7 +15,9 @@ function App() {
                         <h1>Login page</h1>
                     </Route>
                     <Route path="/checkout">
-                        <h1>Checkout page</h1>
+                        <Header />
+                        <Checkout />
+                        {/* <Footer /> */}
                     </Route>
                     {/* Default Route */}
                     <Route path="/">

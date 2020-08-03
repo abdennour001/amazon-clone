@@ -3,7 +3,7 @@ import styles from "./ProductCard.module.css";
 import { useStateValue } from "../../utils/StateProvider";
 
 function ProductCard({ id, title, price, rating, image }) {
-    const [state, dispatch] = useStateValue();
+    const [, dispatch] = useStateValue();
 
     const addToBasket = e => {
         dispatch({
