@@ -3,12 +3,15 @@ import styles from "./Header.module.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
 import { Link } from "react-router-dom";
+import { useStateValue } from "../../utils/StateProvider";
 
 function Header() {
     useEffect(() => {}, []);
+    const [{ basket }, dispatch] = useStateValue();
 
     const updateSelectWidth = e => {
-        e.target.style.width = e.target.options[e.target.selectedIndex].text.length + 5 + "ch";
+        e.target.style.width =
+            e.target.options[e.target.selectedIndex].text.length + 5 + "ch";
     };
 
     return (
@@ -79,7 +82,9 @@ function Header() {
                 <Link to="/checkout" className={styles["header__link"]}>
                     <div className={styles["header__l-basket"]}>
                         <ShoppingBasket></ShoppingBasket>
-                        <span className={styles["header__basketCount"]}>0</span>
+                        <span className={styles["header__basketCount"]}>
+                            {basket.length}
+                        </span>
                     </div>
                 </Link>
             </div>

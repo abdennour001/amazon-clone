@@ -1,7 +1,17 @@
 import React from "react";
 import styles from "./ProductCard.module.css";
+import { useStateValue } from "../../utils/StateProvider";
 
 function ProductCard({ id, title, price, rating, image }) {
+    const [state, dispatch] = useStateValue();
+
+    const addToBasket = e => {
+        dispatch({
+            type: "ADD_TO_BASKET",
+            item: { id, title, price, rating, image }
+        });
+    };
+
     return (
         <div className={styles["l-product_card"]}>
             <div className={styles["l-product__info"]}>
@@ -25,7 +35,10 @@ function ProductCard({ id, title, price, rating, image }) {
                 src={image}
                 alt=""
             />
-            <button className={styles["l-product_card__button"]}>
+            <button
+                onClick={addToBasket}
+                className={styles["l-product_card__button"]}
+            >
                 Add to basket
             </button>
         </div>
