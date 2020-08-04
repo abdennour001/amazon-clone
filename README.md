@@ -20,10 +20,10 @@ This is an Amazon clone built using React JS in the front-end and Firebase in th
 -   [x] 🏗 Build the product component
 -   [x] 🦶 Add a footer to our amazon
 -   [x] 🏗 Introduction to React Context API
--   [ ] 🏗 Build checkout page
--   [ ] 🏗 Build subtotal Component
--   [ ] 🏗 Build Login page
--   [ ] 🚀 Deploy application on Firebase
+-   [x] 🏗 Build checkout page
+-   [x] 🏗 Build subtotal Component
+-   [x] 🏗 Build Login page
+-   [x] 🚀 Deploy application on Firebase
 
 # How it works
 
