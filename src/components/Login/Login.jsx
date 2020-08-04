@@ -21,8 +21,9 @@ function Login() {
                     <button type="submit">Sign in</button>
                 </form>
                 <p className={styles["l-login__condition"]}>
-                    By continuing, you agree to Amazon's Conditions of Use and
-                    Privacy Notice.
+                    By continuing, you agree to
+                    <a href="#"> Amazon's Conditions of Use</a> and{" "}
+                    <a href="#">Privacy Notice</a>.
                 </p>
                 <button className={styles["l-login__create_button"]}>
                     Create your Amazon account

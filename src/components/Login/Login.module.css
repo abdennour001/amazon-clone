@@ -23,7 +23,6 @@
     padding: 20px;
     width: 300px;
     height: 390px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
 }
 
 .l-login__l-form > h1 {
@@ -83,9 +82,14 @@
 .l-login__condition {
     width: 100%;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 600;
     padding-bottom: 20px;
     border-bottom: 1px solid lightgray;
+}
+
+.l-login__condition > a {
+    text-decoration: none;
+    color: #0066c0;
 }
 
 .l-login__create_button {
