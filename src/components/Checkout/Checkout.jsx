@@ -37,6 +37,12 @@ function Checkout() {
                     <h3 className={styles["l-checkout__title"]}>
                         Your Shopping Basket
                     </h3>
+                    {basket.length === 0 && (
+                        <p style={{ opacity: 0.6 }}>
+                            You shoping basket is empty, please try to add some
+                            items.
+                        </p>
+                    )}
                     <ul className={styles["l-checkout__list"]}>
                         {basket.map(product => (
                             <li>
