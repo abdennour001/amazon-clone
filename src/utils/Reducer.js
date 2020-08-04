@@ -22,6 +22,18 @@ export const initialState = {
 
 const reducer = (state, action) => {
     switch (action.type) {
+        case "SIGN_IN_USER":
+            return {
+                ...state,
+                user: action.user,
+            };
+
+        case "SIGN_OUT_USER":
+            return {
+                ...state,
+                user: null,
+            };
+
         case "ADD_TO_BASKET":
             return {
                 ...state,

@@ -2,16 +2,25 @@ import React, { useEffect } from "react";
 import styles from "./Header.module.css";
 import SearchIcon from "@material-ui/icons/Search";
 import ShoppingBasket from "@material-ui/icons/ShoppingBasket";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import { useStateValue } from "../../utils/StateProvider";
+import { auth } from "../../utils/firebase";
 
 function Header() {
     useEffect(() => {}, []);
-    const [{ basket }] = useStateValue();
+    const [{ basket, user }] = useStateValue();
+    const history = useHistory();
 
     const updateSelectWidth = e => {
         e.target.style.width =
             e.target.options[e.target.selectedIndex].text.length + 5 + "ch";
+    };
+
+    const signOut = e => {
+        if (user) {
+            auth.signOut();
+            history.push("/");
+        }
     };
 
     return (
@@ -50,13 +59,19 @@ function Header() {
             </div>
             {/** 3 Links */}
             <div className={styles["header__l-nav"]}>
-                <Link to="/login" className={styles["header__link"]}>
-                    <div className={styles["header__l-option"]}>
+                <Link
+                    to={!user ? "/login" : ""}
+                    className={styles["header__link"]}
+                >
+                    <div
+                        onClick={signOut}
+                        className={styles["header__l-option"]}
+                    >
                         <span className={styles["header__topLink"]}>
-                            Hello Amokrane
+                            Hello {user == null ? "" : user.email}
                         </span>
                         <span className={styles["header__bottomLink"]}>
-                            Sign In
+                            {user ? "Sign Out" : "Sign In"}
                         </span>
                     </div>
                 </Link>
