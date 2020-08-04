@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import styles from "./Checkout.module.css";
 import { ProductCardCheckout as Card } from "./ProductCardCheckout";
 import { useStateValue } from "../../utils/StateProvider";
+import CurrencyFormat from "react-currency-format";
 
 function Checkout() {
     useEffect(() => {
@@ -53,8 +54,14 @@ function Checkout() {
             <div className={styles["l-checkout__checkout"]}>
                 <div className={styles["l-checkout__l-price"]}>
                     <span>Subtotal ({basket.length} items): </span>
-                    <strong>$</strong>
-                    <strong>{getTotal()}</strong>
+                    <CurrencyFormat
+                        renderText={value => <strong>{value}</strong>}
+                        decimalScale={2}
+                        value={getTotal()}
+                        displayType={"text"}
+                        thousandSeparator={true}
+                        prefix={"$"}
+                    />
                 </div>
                 <div className={styles["l-checkout__l-gift"]}>
                     <label htmlFor="gift">

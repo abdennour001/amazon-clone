@@ -37,7 +37,7 @@ body {
 .l-checkout__title {
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid lightgray;
 }
 
 .l-checkout__checkout {
