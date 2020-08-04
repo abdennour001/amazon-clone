@@ -6,8 +6,10 @@ import CurrencyFormat from "react-currency-format";
 
 function Checkout() {
     useEffect(() => {
+        console.warn("SET WHITE");
         document.body.style = "background: white;";
         return () => {
+            console.warn("RESET TO GRAY");
             document.body.style = "background: rgb(234, 237, 237);";
         };
     }, []);

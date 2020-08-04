@@ -1,0 +1,84 @@
+.l-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+
+.l-login__logo {
+    object-fit: contain;
+    min-width: 150px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.l-login__l-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    padding: 20px;
+    width: 300px;
+    height: 380px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.04);
+}
+
+.l-login__l-form > h1 {
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.l-login__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.l-login__form label {
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.l-login__form input {
+    margin-bottom: 10px;
+    height: 30px;
+    border: 1px solid lightgray;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 0 10px;
+    border-radius: 4px;
+}
+
+.l-login__form button {
+    margin-top: 10px;
+    padding: 5px;
+    border: 1px solid;
+    border-color: #a88734 #9c7e31 #846a29;
+    background-color: #f0c14b;
+    cursor: pointer;
+    height: 30px;
+    border-radius: 4px;
+}
+
+.l-login__condition {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+
+.l-login__create_button {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid;
+    border-radius: 4px;
+    height: 30px;
+    border-color: #adb1b8 #a2a6ac #8d9096;
+    background-color: #e7e9ec;
+    cursor: pointer;
+}

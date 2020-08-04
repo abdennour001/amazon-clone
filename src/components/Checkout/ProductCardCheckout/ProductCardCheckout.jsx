@@ -34,8 +34,8 @@ function ProductCardCheckout({ id, title, price, rating, image }) {
                 >
                     {Array(rating)
                         .fill()
-                        .map(_ => (
-                            <span role="img" aria-label="star">
+                        .map((_, i) => (
+                            <span role="img" aria-label="star" key={i}>
                                 ⭐️
                             </span>
                         ))}

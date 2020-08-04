@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Checkout from "./components/Checkout";
+import Login from "./components/Login";
 
 function App() {
     return (
@@ -12,7 +13,7 @@ function App() {
             <div className="App">
                 <Switch>
                     <Route path="/login">
-                        <h1>Login page</h1>
+                        <Login />
                     </Route>
                     <Route path="/checkout">
                         <Header />

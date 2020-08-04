@@ -7,6 +7,7 @@
     max-height: 400px;
     margin-bottom: 10px;
     z-index: 1;
+    border-bottom: 1px solid lightgray;
 }
 
 .l-product_card_checkout_out__info {

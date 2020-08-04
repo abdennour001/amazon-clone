@@ -50,7 +50,7 @@ function Header() {
             </div>
             {/** 3 Links */}
             <div className={styles["header__l-nav"]}>
-                <Link to="/" className={styles["header__link"]}>
+                <Link to="/login" className={styles["header__link"]}>
                     <div className={styles["header__l-option"]}>
                         <span className={styles["header__topLink"]}>
                             Hello Amokrane
