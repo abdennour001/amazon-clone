@@ -2,6 +2,10 @@
 
 This is an Amazon clone built using React JS in the front-end and Firebase in the back-end.
 
+## Live demo
+
+https://clone-28018.web.app/
+
 ### Technologies used
 
 -   ✅ REACT JS for front-end
